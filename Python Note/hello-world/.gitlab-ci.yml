@@ -6,10 +6,11 @@ services:
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
+  CI_REGISTRY: "https://registry.gitlab.com"
   CONTAINER_IMAGE: registry.gitlab.com/Dourai1/DockerAssignment
 
 before_script:
-  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker login -u $Dourai1 -p $FiveThirteen2001 $CI_REGISTRY
 stages:
   - build and stage
 
