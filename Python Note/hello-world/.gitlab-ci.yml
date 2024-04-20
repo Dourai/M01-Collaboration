@@ -6,7 +6,7 @@ services:
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
-  CONTAINER_IMAGE: registry.gitlab.com/codebabel/$CI_PROJECT_NAME #Workaround https://gitlab.com/gitlab-org/gitlab-ce/issues/23339
+  CONTAINER_IMAGE: registry.gitlab.com/Dourai1/DockerAssignment
 
 before_script:
   - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
